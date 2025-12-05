@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amistoso Rechie, Finals</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+    <div class="menu-container" id="menuPage">
+        <div class="game-grid">
+
+            <div class="game-card">
+                <img src="asset/WordScramble_Space_01.png" alt="Word Scramble Game">
+                <div class="game-details">
+                    <h2 class="game-title">Word Scramble</h2>
+                    <p class="game-description">Test your vocabulary!</p>
+                    <button class="play-button" onclick="loadScrambleGame()">Play Now</button>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="asset/4pics.png" alt="Game 2 Logo">
+                <div class="game-details">
+                    <h2 class="game-title">4 Pics 1 Word</h2>
+                    <p class="game-description">Test your Visual Thinking</p>
+                    <a href="4pics/4pics.html" target="_blank" rel="noopener noreferrer">Play Now</a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="asset/snakesnladders.jpg" alt="Game 3 Logo">
+                <div class="game-details">
+                    <h2 class="game-title">Snake & Ladder</h2>
+                    <p class="game-description">Coming Soon!</p>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="info-buttons">
+            <button id="gameMechanicsBtn">Game Mechanics</button>
+            <button id="developersInfoBtn">Developers Info</button>
+        </div>
+    </div>
+
+    <div class="container" id="gamePage" style="display: none;">
+        <div class="header">
+            <div id="timer">Time: <span id="time">120</span></div>
+            <div id="score">Score: <span id="currentScore">0</span></div>
+        </div>
+        <div id="question"></div>
+        <input type="text" id="answer" placeholder="Your Answer">
+        <button id="submitBtn">Submit Answer</button>
+        <div id="result"></div>
+        <button id="backToMenuBtn">Back to Menu</button>
+        <button id="refreshBtn">Refresh</button>
+    </div>
+
+    <div id="gameMechanicsPage" style="display: none;">
+        <h2>Game Mechanics</h2>
+        <p>1. Word Scramble - Players are presented with a jumbled set of letters that form a word or phrase. The core mechanic involves rearranging these letters to correctly spell out the hidden word. Points are awarded based on the length and complexity of the word, encouraging players to find the longest possible solution. A timer adds a sense of urgency, challenging players to unscramble words quickly and efficiently. Successful unscrambling leads to a new set of letters, continuing the cycle of word-based puzzles.</p>
+        <p>2. The game of Snakes and Ladders revolves around a board with numbered squares, typically 1 to 100. Players take turns rolling a die to determine how many squares to advance their token. Landing on the bottom of a ladder allows the player to immediately climb to the square at the top of the ladder, providing a shortcut and accelerating their progress. Conversely, landing on the head of a snake forces the player to slide down to the square at the snake's tail, hindering their advancement. The goal is simple: be the first player to reach the final square, often requiring an exact roll of the die. The unpredictable nature of the ladders and snakes introduces an element of chance, making the game exciting and accessible to players of all ages.</p>
+        <p>3. Okay, so basically, "4 Pics 1 Word" is a puzzle game where you get four different pictures, and you have to figure out what one word connects them all. The game shows you the four pictures, and underneath, there's a bunch of letters. You use those letters to spell out the word that you think connects the pictures. It could be a thing, a place, a feeling – anything really! The letters you need are all there, but there are also some extra letters to trick you. When you get the right word, you move on to the next puzzle! It sounds easy, but it can be pretty tricky sometimes!</p>
+
+        <button id="backToMenuFromMechanicsBtn">Back to Menu</button>
+    </div>
+
+    <div id="developersInfoPage" style="display: none;">
+        <h2>Developer's Info</h2>
+        <p>Developed by: Rechie Amistoso</p>
+        <button id="backToMenuFromDevelopersBtn">Back to Menu</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
